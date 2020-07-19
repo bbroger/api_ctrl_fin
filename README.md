@@ -6,9 +6,9 @@ Api foi construída utilizando PHP 7.2 OO sem o uso de frameworks e o SGBD MySQL
 
 Para rodar a apliacão:
 
-a. faça o download dos arquivos ou clone o repositório;
-b. crie o banco de dados conforme o arquivo ctrl_fin.sql;
-c. altere as credenciais do banco de dados no arquivo classes/Conexao.sql.
+1. faça o download dos arquivos ou clone o repositório;
+2. crie o banco de dados conforme o arquivo ctrl_fin.sql;
+3. altere as credenciais do banco de dados no arquivo classes/Conexao.sql.
 
 Ao acessar o endereço inicial será apresentada mensagem de boas vindas.
 
