@@ -19,10 +19,10 @@ CPF 11122233300.
 
 Os endpoints conforme solicitado são:
 
-Saldo = http://localhost/pessoas/saldo/{cpf} (será apresentado o valor do saldo da pessoa);
-Extrato = http://localhost/pessoas/extrato/{cpf} (será apresentada a movimentação da pessoa, sendo apresentados os débitos, créditos e transferências efetuadas);
-Débito = http://localhost/pessoas/debito/{cpf}/{valor} (caso a pessoa tenha saldo será efetuado o débito do valor informado. O valor pode ser informado no formato integer ou float);
-Transferências = http://localhost/pessoas/transferencia/{cpf}/{valor}/{cpf_beneficiario} (caso a pessoa tenha saldo será efetuado o débito em seu CPF e será efetuado um crédito para o beneficiário. O valor pode ser informado no formato integer ou float);
+Saldo = http://localhost/{local do arquivo}/pessoas/saldo/{cpf} (será apresentado o valor do saldo da pessoa);
+Extrato = http://localhost/{local do arquivo}/pessoas/extrato/{cpf} (será apresentada a movimentação da pessoa, sendo apresentados os débitos, créditos e transferências efetuadas);
+Débito = http://localhost/{local do arquivo}/pessoas/debito/{cpf}/{valor} (caso a pessoa tenha saldo será efetuado o débito do valor informado. O valor pode ser informado no formato integer ou float);
+Transferências = http://localhost/{local do arquivo}/pessoas/transferencia/{cpf}/{valor}/{cpf_beneficiario} (caso a pessoa tenha saldo será efetuado o débito em seu CPF e será efetuado um crédito para o beneficiário. O valor pode ser informado no formato integer ou float);
 
 Obrigado.
 
