@@ -13,16 +13,16 @@ c) altere as credenciais do banco de dados no arquivo classes/Conexao.sql.
 Ao acessar o endereço inicial será apresentada mensagem de boas vindas.
 
 Foram cadastradas 3 pessoas para testes:
-CPF 12312312312;
-CPF 32132132132;
-CPF 11122233300.
+- CPF 12312312312;
+- CPF 32132132132;
+- CPF 11122233300.
 
 Os endpoints conforme solicitado são:
 
-Saldo = http://localhost/{local do arquivo}/pessoas/saldo/{cpf} (será apresentado o valor do saldo da pessoa);
-Extrato = http://localhost/{local do arquivo}/pessoas/extrato/{cpf} (será apresentada a movimentação da pessoa, sendo apresentados os débitos, créditos e transferências efetuadas);
-Débito = http://localhost/{local do arquivo}/pessoas/debito/{cpf}/{valor} (caso a pessoa tenha saldo será efetuado o débito do valor informado. O valor pode ser informado no formato integer ou float);
-Transferências = http://localhost/{local do arquivo}/pessoas/transferencia/{cpf}/{valor}/{cpf_beneficiario} (caso a pessoa tenha saldo será efetuado o débito em seu CPF e será efetuado um crédito para o beneficiário. O valor pode ser informado no formato integer ou float);
+- Saldo = http://localhost/{local_do_arquivo}/pessoas/saldo/{cpf} (será apresentado o valor do saldo da pessoa);
+- Extrato = http://localhost/{local_do_arquivo}/pessoas/extrato/{cpf} (será apresentada a movimentação da pessoa, sendo apresentados os débitos, créditos e transferências efetuadas);
+- Débito = http://localhost/{local_do_arquivo}/pessoas/debito/{cpf}/{valor} (caso a pessoa tenha saldo será efetuado o débito do valor informado. O valor pode ser informado no formato integer ou float);
+- Transferências = http://localhost/{local_do_arquivo}/pessoas/transferencia/{cpf}/{valor}/{cpf_beneficiario} (caso a pessoa tenha saldo será efetuado o débito em seu CPF e será efetuado um crédito para o beneficiário. O valor pode ser informado no formato integer ou float);
 
 Obrigado.
 
