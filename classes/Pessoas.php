@@ -23,7 +23,7 @@ class Pessoas extends Conexao
     public function emitirSaldo()
     {
         $saldo = $this->saldo;
-        $this->registrarMovimentacao($this->cpf, "Emitir Saldo", "", "", "Emitido");
+        $this->registrarMovimentacao($this->cpf, "Emitir Saldo", "", "");
         return $saldo;
     }
 
@@ -35,7 +35,7 @@ class Pessoas extends Conexao
         $stmt->bindParam(":pessoa_cpf", $this->cpf);
         $stmt->execute();
         if ($stmt->rowCount() > 0) {
-            $this->registrarMovimentacao($this->cpf, "Emitir Extrato", "", "", "Emitido");
+            $this->registrarMovimentacao($this->cpf, "Emitir Extrato", "", "");
             return $stmt->fetchAll();
         } else {
             throw new Exception("Nenhuma movimentação encontrada");
@@ -106,7 +106,7 @@ class Pessoas extends Conexao
             case 'Emitir Extrato';
                 $conn = parent::get_instance();
                 $queryInsert = " INSERT INTO tb_movimentacao (pessoa_cpf, tipo, data_movimentacao) 
-                    VALUES (:pessoa_cpf, :tipo, :situacao, NOW()); ";
+                    VALUES (:pessoa_cpf, :tipo, NOW()); ";
                 $stmt = $conn->prepare($queryInsert);
                 $stmt->bindParam(':pessoa_cpf', $pessoa);
                 $stmt->bindParam(':tipo', $tipo);
